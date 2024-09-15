@@ -11,6 +11,7 @@ export const createApplication = async (req: Request, res: Response): Promise<vo
         if (err instanceof Error) {
             res.status(400).json({ error: err.message });
         } else {
+            console.log("Test");
             res.status(400).json({ error: 'Unknown error occurred' });
         }
     }
